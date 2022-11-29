@@ -19,6 +19,8 @@
     "mongodb": "^4.12.1",
     "mongoose": "^5.3.14",
     "request-promise-native": "^1.0.5",
+    "xhr2": "^0.2.1",
+    "xmlhttprequest": "^1.8.0",
     "zombie": "^6.1.4"
   },
   "engines": {

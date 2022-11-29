@@ -36,8 +36,10 @@ function parseData(data) {
   let i = 0
   let stockData = []
   let likes = []
+
   while (i < data.length) {
-    let stock = { stock: data[i].code, price: parseFloat(data[i+1]) }
+    let dd  = JSON.parse(data[i+1]);
+    let stock = { stock: data[i].code, price: dd.latestPrice} 
     likes.push(data[i].likes.length)
     stockData.push(stock)
     i += 2
@@ -50,7 +52,6 @@ function parseData(data) {
     stockData[0].likes = likes[0]
     stockData = stockData[0]
   }
-  
   return stockData
 }
 
