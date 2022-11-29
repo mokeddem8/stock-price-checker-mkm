@@ -30,10 +30,7 @@ mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true }, 
 
   
 });
-
-/* Drop the DB-->For making Functional-tests easier  */
-//mongoose.connection.dropDatabase(dbName);
-     
+   
 
       // Close MongoDB connection
 process.on('SIGINT', () => {

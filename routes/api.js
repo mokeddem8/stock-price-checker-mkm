@@ -5,6 +5,9 @@ let objectId = mongoose.Types.ObjectId
 let request = require('request-promise-native');
 const Console = require('zombie/lib/console');
 
+/* Drop the DB-->For making Functional-tests easier  */
+let con = mongoose.connection.dropDatabase();
+
 let stockSchema = new mongoose.Schema({
   code: String,
   likes: { type: [String], default: [] }
