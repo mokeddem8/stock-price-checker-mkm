@@ -1,8 +1,8 @@
 
-var chaiHttp = require('chai-http');
-var chai = require('chai');
-var assert = chai.assert;
-var server = require('../server');
+let chaiHttp = require('chai-http');
+let chai = require('chai');
+let assert = chai.assert;
+let server = require('../server');
 
 chai.use(chaiHttp);
 
